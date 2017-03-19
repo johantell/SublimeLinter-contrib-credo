@@ -16,13 +16,17 @@ from SublimeLinter.lint import Linter, util
 class Credo(Linter):
     """Provides an interface to credo."""
 
-    syntax = 'Elixir'
-    cmd = ('credo', '--format=flycheck')
-    executable = None
+    syntax = ('Elixir', 'elixir')
+    cmd = 'credo --format=flycheck @'
+    executable = "elixir"
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.0'
-    regex = r''
+    version_requirement = '>= 0.6.1'
+    regex = (
+        r'^.+?:(?P<line>\d+):((?P<col>\d+):)? '
+        r'(?:(?P<error>[W])|(?P<warning>[R|F|C])): '
+        r'(?P<message>.+)$'
+    )
     multiline = False
     line_col_base = (1, 1)
     tempfile_suffix = None
