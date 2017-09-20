@@ -24,7 +24,7 @@ class Credo(Linter):
     version_requirement = '>= 0.6.1'
     regex = (
         r'^.+?:(?P<line>\d+):((?P<col>\d+):)? '
-        r'(?:(?P<error>[W])|(?P<warning>[R|F|C])): '
+        r'(?:(?P<error>[W])|(?P<warning>[RFC])): '
         r'(?P<message>.+)$'
     )
     multiline = False
