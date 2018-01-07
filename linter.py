@@ -17,7 +17,7 @@ class Credo(Linter):
     """Provides an interface to credo."""
 
     syntax = ('Elixir', 'elixir')
-    cmd = 'credo --format=flycheck @'
+    cmd = 'mix credo --format=flycheck @'
     executable = "elixir"
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
