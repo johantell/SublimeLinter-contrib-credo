@@ -11,13 +11,19 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before using this plugin, you must ensure that `credo` is installed on your system. To install `credo`, do the following:
 
-1. Install Other.
-
-1. Install `credo` by typing the following in a terminal:
-   ```
-   <package manager> install credo
-   ```
-
+1.
+```
+$ git clone git@github.com:rrrene/bunt.git
+$ cd bunt
+$ mix archive.build
+$ mix archive.install
+$ cd -
+$ git clone git@github.com:rrrene/credo.git
+$ cd credo
+$ mix deps.get
+$ mix archive.build
+$ mix archive.install
+```
 
 **Note:** This plugin requires `credo` 2 or later.
 
@@ -34,6 +40,12 @@ To install via Package Control, do the following:
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
 1. When the plugin list appears, type `credo`. Among the entries you should see `SublimeLinter-contrib-credo`. If that entry is not highlighted, use the keyboard or mouse to select it.
+
+To install as a local package, do the following:
+
+1. Clone the repository via `git clone git@github.com:mintcore/SublimeLinter-contrib-credo.git`
+2. Point to it via `ln -s` from the `~/Library/Application Support/Sublime Text 3/Packages/` folder
+3. Withing Sublime Text, open the [Command Palette][cmd] and choose *Package Control: Install local dependency*
 
 
 ## Contributing
