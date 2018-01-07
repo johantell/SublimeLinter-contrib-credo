@@ -11,7 +11,6 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before using this plugin, you must ensure that `credo` is installed on your system. To install `credo`, do the following:
 
-1.
 ```
 $ git clone git@github.com:rrrene/bunt.git
 $ cd bunt
@@ -25,12 +24,7 @@ $ mix archive.build
 $ mix archive.install
 ```
 
-**Note:** This plugin requires `credo` 2 or later.
-
-### Linter configuration
-In order for `credo` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
-
-Once you have installed and configured `credo`, you can proceed to install the SublimeLinter-contrib-credo plugin if it is not yet installed.
+**Note:** This plugin requires `credo` 0.6.1 or later.
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
@@ -38,8 +32,7 @@ Please use [Package Control][pc] to install the linter plugin. This will ensure 
 To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
-
-1. When the plugin list appears, type `credo`. Among the entries you should see `SublimeLinter-contrib-credo`. If that entry is not highlighted, use the keyboard or mouse to select it.
+2. When the plugin list appears, type `credo`. Among the entries you should see `SublimeLinter-contrib-credo`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 To install as a local package, do the following:
 
@@ -52,10 +45,10 @@ To install as a local package, do the following:
 If you would like to contribute enhancements or fixes, please do the following:
 
 1. Fork the plugin repository.
-1. Hack on a separate topic branch created from the latest `master`.
-1. Commit and push the topic branch.
-1. Make a pull request.
-1. Be patient.  ;-)
+2. Hack on a separate topic branch created from the latest `master`.
+3. Commit and push the topic branch.
+4. Make a pull request.
+5. Be patient.  ;-)
 
 Please note that modifications should follow these coding guidelines:
 
